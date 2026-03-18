@@ -1,38 +1,18 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  typescript: { ignoreBuildErrors: true },
+  eslint: { ignoreDuringBuilds: true },
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placeholder.co',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-        port: '',
-        pathname: '/**',
-      },
+      { protocol: 'https', hostname: 'placeholder.co', pathname: '/**' },
+      { protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'picsum.photos', pathname: '/**' },
     ],
   },
   experimental: {
     serverActions: {
-      bodySizeLimit: '4mb',
+      bodySizeLimit: '10mb', // This matches your new memory power
     },
   },
 };
