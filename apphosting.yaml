@@ -3,7 +3,7 @@
 
 runConfig:
   memoryMiB: 6000
-  cpu: 1
+  cpu: 2
   # Increase this value if you'd like to automatically spin up
   # more instances in response to increased traffic.
   maxInstances: 1
