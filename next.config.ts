@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     serverActions: {
-      bodySizeLimit: '10mb', // This matches your new memory power
+      bodySizeLimit: '4mb', // This matches your new memory power
     },
   },
 };
